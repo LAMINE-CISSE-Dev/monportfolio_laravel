@@ -1,9 +1,12 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\ContactMailController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DoctorAppController;
 use App\Http\Controllers\EducationController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangageController;
@@ -31,7 +34,11 @@ Route::get('/', function () {
 Route::get('/home', [HomeController::class, 'home'])->name('home');
 Route::get('/projet', [ProjetController::class, 'projet'])->name('projet');
 Route::get('/parcours', [ParcoursController::class, 'parcours'])->name('parcour');
+
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+Route::get('/test_view', [ContactMailController::class, 'test_view'])->name('test');
+
+Route::post('/post_message', [ContactFormController::class, 'post_message'])->name('post_message');
 Route::get('/resume', [ResumeController::class, 'resume'])->name('resume');
 Route::get('/doctorApp', [DoctorAppController::class, 'doctorApp'])->name('doctorApp');
 

@@ -24,9 +24,15 @@
 }
 
 .entete{
-    color: #ff9500;
+    /* color: #ff9500; */
+    color: #000876;
     font-size: 30;
     font-weight: bold;
+}
+.entete2{
+    /* color: #000876; */
+    color: #ff9500;
+
 }
 .gradient{
     background-color: #000876;

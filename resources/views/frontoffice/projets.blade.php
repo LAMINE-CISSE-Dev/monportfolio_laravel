@@ -39,7 +39,7 @@
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0 entete">Projects</h1>
+                        <h1 class="display-5 fw-bolder mb-0 entete">Projets</h1>
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -50,7 +50,7 @@
                                 <div class="card-body p-0">
                                     <div class="row d-flex align-items-center justify-content-between">
                                         <div class="p-5 col-md-6">
-                                            <h2 class="fw-bolder">{{$rem->projets}}</h2>
+                                            <h2 class="fw-bolder entete2">{{$rem->projets}}</h2>
                                             <p>{{$rem->description}}</p>
                                             <p>{{$rem->created_at->format('d-m-Y')}}</p>
                                         </div>

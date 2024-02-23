@@ -43,8 +43,10 @@
                     <div class="bg-light rounded-4 py-5 px-4 px-md-5">
                         <div class="text-center mb-5">
                             <div class="feature text-white rounded-3 mb-3  couleure"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+                            <h1 class="fw-bolder">Ecrivez votre message!</h1>
+                            @if (Session::has('msg'))
+                              <p class="alert alert-success">{{Session::get('msg')}}</p>  
+                            @endif
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
@@ -55,29 +57,36 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <form id="contact-form" action="/post_message" method="post" name="contact_form" data-sb-form-api-token="API_TOKEN">
+                                    @csrf
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                         <label for="name">Full name</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="email" name="email"  type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                         <label for="email">Email address</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                         <label for="phone">Phone number</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                     </div>
+                                    <!-- Subject input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="subject" name="subject" type="text" placeholder="Enter your subject..." data-sb-validations="required" />
+                                        <label for="subject">Subject</label>
+                                        <div class="invalid-feedback" data-sb-feedback="subject:required">A name is required.</div>
+                                    </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                         <label for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>
@@ -85,14 +94,14 @@
                                     <!---->
                                     <!-- This is what your users will see when the form-->
                                     <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
+                                    {{-- <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
                                             <div class="fw-bolder">Form submission successful!</div>
                                             To activate this form, sign up at
                                             <br />
                                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- Submit error message-->
                                     <!---->
                                     <!-- This is what your users will see when there is-->
