@@ -28,7 +28,7 @@ class MailDemo extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Mail from Lamine CISSE',
+            subject: 'Courriel de Mon Portfolio|Lamine CISSE',
         );
     }
 

@@ -21,7 +21,7 @@
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
                 <div class="container px-5">
                     <a class="navbar-brand" href="home"><img src="admin/assets/logo.png" width="75" height="75" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -71,7 +71,7 @@
             <section class="py-5 gradient text-white">
                 <div class="container px-5 my-5 gradient ">
                     <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <h2 class="display-6 fw-bolder mb-4">Besoin d'aide ? Contactez-moi dès maintenant pour discuter de votre projet !</h2>
                         <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact">Contact me</a>
                     </div>
                 </div>

@@ -22,7 +22,7 @@
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow">
                 <div class="container px-5">
                     <a class="navbar-brand" href="home"><img src="admin/assets/logo.png" width="75" height="75" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -40,7 +40,7 @@
             <section class="py-5">
                 <div class="container px-5">
                     <!-- Contact form-->
-                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5 margintop">
                         <div class="text-center mb-5">
                             <div class="feature text-white rounded-3 mb-3  couleure"><i class="bi bi-envelope"></i></div>
                             <h1 class="fw-bolder">Ecrivez votre message!</h1>
@@ -61,32 +61,32 @@
                                     @csrf
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Full name</label>
+                                        <input class="form-control" id="name" name="name" type="text" placeholder="Entrez votre nom..." data-sb-validations="required" />
+                                        <label for="name">Nom complet</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" name="email"  type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                        <label for="email">Email address</label>
+                                        <input class="form-control" id="email" name="email"  type="email" placeholder="nom@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Adresse Email</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phone">Phone number</label>
+                                        <label for="phone">Numéro de Téléphone</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                     </div>
                                     <!-- Subject input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="subject" name="subject" type="text" placeholder="Enter your subject..." data-sb-validations="required" />
-                                        <label for="subject">Subject</label>
+                                        <input class="form-control" id="subject" name="subject" type="text" placeholder="Entrez votre sujet..." data-sb-validations="required" />
+                                        <label for="subject">Sujet</label>
                                         <div class="invalid-feedback" data-sb-feedback="subject:required">A name is required.</div>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Ecrivez votre message ici..." style="height: 10rem" data-sb-validations="required"></textarea>
                                         <label for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>

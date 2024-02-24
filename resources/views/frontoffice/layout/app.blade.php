@@ -23,23 +23,23 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow">
                 <div class="container px-5">
                     <a class="navbar-brand" href="home"><img src="admin/assets/logo.png" width="75" height="75" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="home">Acceuil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume">Parcours</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projet">Projets</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Acceuil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('resume')}}">Parcours</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('projet')}}">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Header-->
             <header class="py-3">
-                <div class="container px-5 pb-5">
+                <div class="container px-5 pb-5 margintop">
                     <div class="row gx-5 align-items-center">
                         <div class="col-md-5">
                             <!-- Header text content-->
@@ -74,9 +74,8 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder entete"><span class="d-inline">A propos de moi</span></h2>
-                                <p class="lead fw-light mb-4">Je m'appelle Lamine CISSE et I help brands grow.</p>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
+                                <h2 class="display-5 fw-bolder entete mb-4"><span class="d-inline">A propos de moi</span></h2>
+                                <p class="text-muted debut mb-4">En tant que développeur front-end et designer, je m'efforce de fusionner l'esthétique et la fonctionnalité pour offrir des expériences web captivantes. Mon objectif est de donner vie à des designs innovants tout en assurant une performance optimale. Avec une expertise approfondie en HTML, CSS, Bootstrap, JavaScript, ReactJs, Flutter et Laravel, je m'engage à créer des interfaces interactives et intuitives qui repoussent les limites de la créativité et de la technologie.</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="couleurs" href="https://twitter.com/home"><i class="bi bi-twitter"></i></a>
                                     <a class="couleurs" href="https://www.linkedin.com/in/lamine-cisse-1a674322b/"><i class="bi bi-linkedin"></i></a>

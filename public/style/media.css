@@ -21,6 +21,14 @@
     .profile-img{
        display: none;
     }
+    .debut{
+        text-align: start;
+    }
+    .bouton-cv{
+        width: 130px;
+        height: 50px;
+        font-size: 10px;
+    }
 }
 
 .entete{
@@ -28,6 +36,10 @@
     color: #000876;
     font-size: 30;
     font-weight: bold;
+    margin-top: 100px;
+}
+.margintop{
+    margin-top: 100px;
 }
 .entete2{
     /* color: #000876; */

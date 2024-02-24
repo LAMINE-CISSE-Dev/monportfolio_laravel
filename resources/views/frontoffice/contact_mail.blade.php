@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Name: {{$data['name']}}</p>
-    <p>email: {{$data['email']}}</p>
-    <p>Phone: {{$data['phone']}}</p>
-    <p>Subject: {{$data['subject']}}</p>
+    <p>Nom: {{$data['name']}}</p>
+    <p>Email: {{$data['email']}}</p>
+    <p>Téléphone: {{$data['phone']}}</p>
+    <p>Sujet: {{$data['subject']}}</p>
     <p>Message: {{$data['message']}}</p>
 </body>
 </html>

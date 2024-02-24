@@ -24,6 +24,6 @@ class ContactFormController extends Controller
 
      Mail::to('lc327300@gmail.com')->send(new MailDemo($data));
      
-     return back()->with('msg', 'Thanks for reaching out. Your message has been sent successfully');
+     return back()->with('msg', 'Merci d\'avoir contacté. Votre message a été envoyé avec succès.');
     }
 }
