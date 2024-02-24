@@ -47,7 +47,7 @@ Route::get('/doctorApp', [DoctorAppController::class, 'doctorApp'])->name('docto
 
 // LES ROUTES DU FONT OFFICHE
 
-Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/dashboard/admin/laminecisse', [DashboardController::class, 'dashboard'])->name('dashboard');
 
 // La partie produits
 Route::get('/produits', [ProductController::class, 'index'])->name('produits');
